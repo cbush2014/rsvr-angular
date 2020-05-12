@@ -8,7 +8,8 @@ import { Event } from '../models/event';
 })
 export class EventService {
   events:Event[];
-  resourceUrl: string = "http://localhost:8000/events/";
+  resourceUrl: string = "https://rsvrspringboot13.herokuapp.com/events/";
+  // resourceUrl: string = "http://localhost:8000/events/";
   httpOptions = {
     headers: new HttpHeaders({'Content-Type': 'application/json'})
   }
